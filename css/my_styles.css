@@ -107,6 +107,8 @@ section img#home_page_img {
   border-color: rgb(0, 0, 0);
   background-color: white;
   border-radius: 20px;
+  display: block;
+  margin: 10px auto;
 }
 
 /* Footer like the example */
@@ -117,22 +119,86 @@ footer {
   margin-top: 10px;
   background-color: lightgray;
 }
+
 /* Styles for the products table */
 section table {
-	border: 2px solid black;
-	border-collapse: collapse;
-	width: 80%;
-	
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 80%;
 }
-section table td, th {
-	border: 1px solid rgb(175,175,175,);
+
+section table td,
+section table th {
+  border: 1px solid rgb(175, 175, 175); /* fixed extra comma */
 }
+
 section table tr:nth-child(even) {
-	background-color: rgb(240,248,255);
+  background-color: rgb(240, 248, 255);
 }
+
 section table col.price {
-	background-color: rgb(255,255,224);
+  background-color: rgb(255, 255, 224);
 }
+
 section table tr:hover {
-	background-color: rgb(176,224,230);
+  background-color: rgb(176, 224, 230);
+}
+
+/* ---------- Mobile friendly layout ---------- */
+@media (max-width: 768px) {
+  #wrapper {
+    width: auto;      /* no fixed 900px */
+    margin: 0;
+    padding: 10px;
+  }
+
+  nav,
+  section {
+    float: none;      /* stop side-by-side */
+    width: auto;      /* full width */
+  }
+
+  nav {
+    margin: 0 0 10px 0; /* spacing under nav */
+  }
+
+  nav ul li a {
+    padding: 10px 12px; /* bigger tap targets */
+  }
+
+  /* Make ALL framed images responsive (about page too) */
+  .img_border {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+  }
+
+  /* Home page image also responsive */
+  section img#home_page_img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+  }
+
+  /* Video embeds */
+  video,
+  iframe {
+    width: 100%;
+    max-width: 640px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* Reduce extra vertical space a bit */
+  header {
+    margin-bottom: 6px;
+  }
+
+  footer {
+    margin-top: 6px;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper { width: 100% !important; margin: 0 !important; }
+  nav, section { float: none !important; width: 100% !important; }
 }
