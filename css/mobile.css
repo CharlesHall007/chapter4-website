@@ -1,1 +1,96 @@
+/* mobile.css (screen and max-width: 480px) */
 
+/* Make wrapper fit screen */
+#wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border: 0;
+}
+
+/* Stack layout */
+nav,
+section {
+  float: none;
+  width: 100%;
+  margin: 0;
+}
+
+/* Hamburger menu */
+.menu-chkbx {
+  display: none;
+}
+
+.menu-burger {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 6px;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: black;
+  position: relative;
+  border-radius: 2px;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  top: -9px;
+}
+
+.hamburger::after {
+  top: 9px;
+}
+
+/* Hide menu by default */
+.main-nav {
+  display: none;
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* Show menu when checkbox checked */
+.menu-chkbx:checked ~ .main-nav {
+  display: block;
+}
+
+/* Mobile menu styling */
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  background-color: rgb(175, 175, 175);
+  border-radius: 8px;
+}
+
+.main-nav ul li a {
+  display: block;
+  padding: 12px 14px;
+  color: rgb(255, 255, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-nav ul li:hover {
+  background-color: rgb(148, 51, 62);
+}
+
+/* Responsive images */
+#home_page_img,
+.img_border {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
