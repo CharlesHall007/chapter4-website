@@ -4,24 +4,44 @@
     <!-- Developer: (Charles)
       Start Date: (02/23/2025) -->
     <title>A cool webpage</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <link rel="stylesheet" type="text/css" href="css/my_styles.css" media="screen" />
+
+  <!-- Optional: only if you create these files -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/full_screen.css" media="screen and (min-width: 769px)" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/tablet.css" media="screen and (max-width: 768px) and (min-width: 481px)" /> -->
+
+  <!-- Mobile styles -->
+  <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 480px)" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
     <link rel="stylesheet" type="text/css" href="css/my_styles.css" />
   </head>
 
   <body>
     <div id="wrapper">
+
       <header>
         <h1>Welcome to A Cool Webpage LLC</h1>
-      </header>
 
-     <nav>
-       <ul>
-         <li><a href="index.html">Home</a></li>
-         <li><a href="products.html">Products</a></li>
-         <li><a href="about.html">About Us</a></li>
-         <li><a href="video.html">Video</a></li>
-       </ul>
-     </nav>
+        <!-- Checkbox (hidden) + Hamburger icon -->
+        <input class="menu-chkbx" type="checkbox" id="menu-chkbx" />
+        <label class="menu-burger" for="menu-chkbx">
+          <span class="hamburger"></span>
+        </label>
+
+        <!-- Nav -->
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="video.html">Video</a></li>
+          </ul>
+        </nav>
+      </header>
 
       <section>
         <h2>
@@ -40,38 +60,18 @@
         />
 
         <map name="home_page_map">
-          <area
-            shape="rect"
-            coords="10,220,220,385"
-            alt="About Us"
-            href="about.html"
-          />
-          <area
-            shape="rect"
-            coords="180,5,380,200"
-            alt="Our Products"
-            href="products.html"
-          />
-          <area
-            shape="rect"
-            coords="370,220,570,385"
-            alt="Video"
-            href="video.html"
-          />
+          <area shape="rect" coords="10,220,220,385" alt="About Us" href="about.html" />
+          <area shape="rect" coords="180,5,380,200" alt="Our Products" href="products.html" />
+          <area shape="rect" coords="370,220,570,385" alt="Video" href="video.html" />
         </map>
       </section>
 
-      <footer>Copyright &copy; 2026
-	          Charles Hall
-			  CIST1510: Web Development I 41152
-	  
-	 </footer>
-    </div>
-  </body>
-</html>
-	  
-	 </footer>
-    </div>
-  </body>
+      <footer>
+        Copyright &copy; 2026 Charles Hall<br />
+        CIST1510: Web Development I 41152
+      </footer>
 
+    </div>
+  </body>
 </html>
+
