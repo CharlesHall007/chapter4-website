@@ -42,6 +42,7 @@ header h1 {
 }
 
 /* Style for the nav element */
+
 nav {
   width: 200px;
   float: left;
@@ -71,10 +72,33 @@ nav ul li a {
   display: block;
 }
 
+
+
 /* Keep section to the right of the nav */
 section {
   float: left;
   width: 660px;
+}
+nav {
+	width: 200px;
+}
+
+nav ul {
+	line-height: 2em;
+	list-style-type: none;
+	padding-left: 0px;
+	text-indent: 5px;
+	border-radius: 5px;
+}
+nav ul li {
+	background-color: rgb(175,175,175)
+	border-radius: 5px;
+	width: 99%
+}
+nav a {
+	color: rgb(255,255,0);
+	font-weight: bold;
+	text-decoration: none;
 }
 
 /* Style for the h2 inside the section */
@@ -147,40 +171,37 @@ section table tr:hover {
 /* ---------- Mobile friendly layout ---------- */
 @media (max-width: 768px) {
   #wrapper {
-    width: auto;      /* no fixed 900px */
+    width: auto;
     margin: 0;
     padding: 10px;
   }
 
   nav,
   section {
-    float: none;      /* stop side-by-side */
-    width: auto;      /* full width */
+    float: none;
+    width: auto;
   }
 
   nav {
-    margin: 0 0 10px 0; /* spacing under nav */
+    margin: 0 0 10px 0;
   }
 
   nav ul li a {
-    padding: 10px 12px; /* bigger tap targets */
+    padding: 10px 12px;
   }
 
-  /* Make ALL framed images responsive (about page too) */
   .img_border {
     width: 100%;
     max-width: 560px;
     height: auto;
   }
 
-  /* Home page image also responsive */
   section img#home_page_img {
     width: 100%;
     max-width: 560px;
     height: auto;
   }
 
-  /* Video embeds */
   video,
   iframe {
     width: 100%;
@@ -189,7 +210,6 @@ section table tr:hover {
     margin: 10px auto;
   }
 
-  /* Reduce extra vertical space a bit */
   header {
     margin-bottom: 6px;
   }
@@ -197,8 +217,4 @@ section table tr:hover {
   footer {
     margin-top: 6px;
   }
-}
-@media (max-width: 768px) {
-  #wrapper { width: 100% !important; margin: 0 !important; }
-  nav, section { float: none !important; width: 100% !important; }
 }
