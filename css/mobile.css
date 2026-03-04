@@ -21,6 +21,16 @@ section {
   display: none;
 }
 
+.menu-chkbx:checked ~ .menu {
+	max-height: 250px;
+	position: absolute;
+	margin-top: 62px;
+	z-index: 1;
+	border-radius: 5px;
+	background-color: rgb(220,220,220);
+}
+
+
 .menu-burger {
   display: inline-block;
   cursor: pointer;
@@ -112,3 +122,4 @@ section {
 	padding: 0;
 	
 }
+
